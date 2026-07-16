@@ -1,5 +1,7 @@
 # AI-Native Architecture Skill 与 MCP Control Plane 产品构想
 
+> **设计状态（2026-07-16）：** 本文保留为原始研究企划与产品背景。Part I 与 Part II 的获批规范性设计分别见 [RFC 0001 — Portable AI Native Architect Skill](./docs/rfcs/0001-portable-ai-native-architect-skill.md) 和 [RFC 0002 — Architecture-Driven Capability Control Plane](./docs/rfcs/0002-architecture-driven-capability-control-plane.md)。如果本文与 RFC 的产品边界冲突，以 RFC 为准；尤其是 Part II 已从“统一网关优先”收窄为架构驱动的能力契约、策略编译与独立保障层，MVP 不进入运行时数据路径。
+
 **版本：** v0.1  
 **日期：** 2026-07-13  
 **工作名称：** AI Native Architect / MCP Control Plane  
