@@ -2,16 +2,16 @@
 
 [中文入口](./README.zh-CN.md)
 
-An open-source research and design package for helping teams decide what should become agentic, design it with explicit evidence and control boundaries, and govern the resulting capabilities without building another generic MCP gateway.
+A public research and design package, intended for open-source collaboration once its licensing strategy is approved, for helping teams decide what should become agentic, design it with explicit evidence and control boundaries, and govern the resulting capabilities without building another generic MCP gateway.
 
 ## Project status
 
-This repository contains an **accepted design and an unvalidated Skill draft**. It does not yet contain a production implementation, a behaviorally verified host integration, or a released MCP control-plane product.
+This repository contains an **accepted design, public implementation plans, and an unvalidated Skill draft**. It does not yet contain a production implementation, a behaviorally verified host integration, or a released MCP control-plane product.
 
 | Track | Accepted direction | Current state |
 |---|---|---|
-| Part I — AI Native Architect Skill | Agent Skills–compliant portable core with separate host adapters; OpenClaw is the first behavioral verification target | Design accepted; implementation and verification not started |
-| Part II — Capability Control Plane | Architecture-to-policy compiler and independent assurance layer; read-only and out of the runtime data path for the MVP | Design accepted; implementation and market validation not started |
+| Part I — AI Native Architect Skill | Agent Skills–compliant portable core with separate host adapters; OpenClaw is the first behavioral verification target | Design accepted; implementation plan published; build and verification not started |
+| Part II — Capability Control Plane | Architecture-to-policy compiler and independent assurance layer; read-only and out of the runtime data path for the MVP | Design accepted; implementation plan published; build and market validation not started |
 
 ## Canonical design RFCs
 
@@ -19,6 +19,13 @@ This repository contains an **accepted design and an unvalidated Skill draft**. 
 2. [RFC 0002 — Architecture-Driven Capability Control Plane](./docs/rfcs/0002-architecture-driven-capability-control-plane.md)
 
 These RFCs are the normative design source for Part I and Part II. The earlier strategy document remains research background and product context.
+
+## Public implementation plans
+
+1. [Part I — AI Native Architect Skill implementation plan](./docs/superpowers/plans/2026-07-16-ai-native-architect-skill.md)
+2. [Part II — Capability Control Plane implementation plan](./docs/superpowers/plans/2026-07-16-capability-control-plane-mvp.md)
+
+The plans translate the accepted RFCs into test-first tasks and explicit rollout gates. Publishing a plan does not mean its implementation or behavioral claims have passed.
 
 ## Research and current artifacts
 
@@ -30,8 +37,9 @@ These RFCs are the normative design source for Part I and Part II. The earlier s
 1. Read this project status and the Chinese entry if useful.
 2. Review RFC 0001 for the user workflow, portability, evidence, output, safety, and host-verification contract.
 3. Review RFC 0002 for the product boundary, capability contracts, policy compilation, drift, assurance, and read-only MVP.
-4. Compare the RFCs with the original strategy and current Skill draft.
-5. Open review issues for assumptions, missing evidence, falsification conditions, security boundaries, or interoperability gaps.
+4. Review the implementation plans for traceability, test coverage, release gates, and cross-track handoff contracts.
+5. Compare the RFCs with the original strategy and current Skill draft.
+6. Open review issues for assumptions, missing evidence, falsification conditions, security boundaries, or interoperability gaps.
 
 ## Claim policy
 
@@ -47,4 +55,4 @@ These RFCs are the normative design source for Part I and Part II. The earlier s
 - The existing Skill has not passed the accepted contract or host evaluation suite.
 - No host may be labeled `Native/Verified` yet.
 - The current Skill declares Apache-2.0 while current ClawHub publishing documentation requires MIT-0 for published Skills. ClawHub publication is therefore blocked until the rights holder approves a compatible licensing strategy.
-- Implementation planning begins only after the written RFCs complete maintainer review.
+- The implementation plans are public, but execution has not started; release remains blocked on the contract, evidence, licensing, governance, and design-partner gates stated in those plans.
